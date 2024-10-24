@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+nltk
+spacy
+transformers
+seaborn
+wordcloud
+pyspellchecker
+tensorflow
+keras
+scikit-learn

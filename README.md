@@ -20,45 +20,48 @@ Table of Contents
 ## Project Structure
 
 ## Progress
-1. Preprocessing:
-    a. removed extraspaces
-    b. dropped NaN rows
-    c. removed duplicate rows
-    d. removed rows with less that 20 characters text description (crimeaditionalinfo)
-2. EDA:
-    a. Category Distribution (category vs count)
-    b. Sub-Category Distribution
-    c. Bar and Pie charts
-    d. Distribution of word lengths histogram
-    e. Think Think Think...
 
-## Pending
-1. Preprocessing:
-    a. N-gram Analysis: Analyze n-grams (sequences of 1, 2, or 3 words) to understand common phrases used in the crime descriptions.
-    b. TF-IDF and Category Correlation: Use Term Frequency-Inverse Document Frequency (TF-IDF) to analyze the importance of words in different categories.
-    c. Chi-Square Test: Perform a chi-square test to check if certain words are significantly associated with a particular category.
-    d. Correct the spellings
-    e. Handle different languages (esp. Hindi in English script)
-    f. Handle class imbalance (Use class weighting?)
-    g. Remove Stop words, tokenization, lemmatization/stemming
+### 1. Preprocessing
+   - Removed extra spaces
+   - Dropped NaN rows
+   - Removed duplicate rows
+   - Removed rows with less than 20 characters in the text description (`crimeaditionalinfo`)
 
-2. Embeddings:
-    a. Use SBERT (try both pretrained and finetuned on our dataset)
-    b. Check for domain adapted SBERT or other BERT based models
-    c. Also try to condense text to key words like subjects, verbs and objects using SpaCy and get the embeddings.
+### 2. Exploratory Data Analysis (EDA)
+   - Category Distribution (category vs. count)
+   - Sub-Category Distribution
+   - Bar and Pie Charts
+   - Distribution of Word Lengths (histogram)
+   - Further analysis and insights...(Any Ideas?)
 
-3. Model Design:
-    a. We can use Multi Task Learning Model for classification(Neural Network)
-    b. Advanced Approach: Transfer Learning with BERT and MTL.
-    C. Use Ensemble methods on embeddings like XGBoost, LSTM etc.
-    d. Can we use clustering techniques?
+## Pending Tasks
 
-4. Pipeline Preparation:
-    a. Convert the necessary code into python file
-    b. Create necessary pipeline to process new data end to end.
-    c. Create a webpage and host this system.
+### 1. Preprocessing
+   - **N-gram Analysis:** Analyze n-grams (1, 2, or 3-word sequences) to identify common phrases in crime descriptions.
+   - **TF-IDF and Category Correlation:** Use TF-IDF to assess word importance across different categories.
+   - **Chi-Square Test:** Check for significant associations between words and categories.
+   - Correct spellings
+   - Handle different languages (especially Hindi in English script)
+   - Address class imbalance (consider class weighting)
+   - Remove stop words, perform tokenization, and apply lemmatization/stemming
 
-5. Submission requirements:
-    a. Prepare Report
-    b. Use sphinx for documentation.
-    c. Clean the code, add proper comments and visualizations.
+### 2. Embeddings
+   - Use **SBERT** (experiment with both pretrained and fine-tuned versions on our dataset)
+   - Explore domain-adapted SBERT or other BERT-based models
+   - Extract key phrases like subjects, verbs, and objects using **SpaCy**, and compute their embeddings
+
+### 3. Model Design
+   - Implement a **Multi-Task Learning (MTL) Model** for classification using a neural network
+   - Advanced Approach: Apply **Transfer Learning with BERT and MTL**
+   - Use ensemble methods like **XGBoost** and **LSTM** on embeddings
+   - Investigate the potential of clustering techniques
+
+### 4. Pipeline Preparation
+   - Convert relevant code into Python files
+   - Create a pipeline for processing new data end-to-end
+   - Develop and host a webpage for the system
+
+### 5. Submission Requirements
+   - Prepare the final report
+   - Use **Sphinx** for documentation
+   - Clean the code, add comments, and include proper visualizations
